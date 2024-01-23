@@ -1,180 +1,135 @@
 body {
-    margin: 0;
-    background-color: #1D1A1D;
-    color: aliceblue;
+    margin: 0px;
+    background-color: #191919;
+    color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-
-
 }
 
 * {
     box-sizing: border-box;
 }
 
-img {
-   /* height: 1544px; 
-   width: 1158px; */
-   /* height: 772px;
-   width: 580px; */
-   /* height: 755px;
-   width: 610px; */
-}
-
 header {
-    box-sizing: border-box;
-
     display: flex;
     justify-content: space-between;
-    height: 6vh;
-    /* width: 100vw; */
-    background-color: #eef2dcd2;
-    color: black;
-    padding: 20px;
-    /* border: 1px solid #FF004D; */
-}
+    background-color:#111111;
+    color: #e5e9ef;
+    align-items: center;
 
-/* body {
-    height: 94vh;
+    padding: 0em 10em 0em 10em;
+    
+    height: 4em;
     width: 100vw;
-    background-color: #1D1A1D;
-    color: #efe6ef;;
-    /* taken from webtips.dev 
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-} */
+}
+.icon {
 
-/* img {
-    border-top-left-radius: 200px;
-    border-bottom-right-radius: 200px;    
-} */
-.icon>a{
-    display: flex;
-    /* border: 2px solid pink; */
 }
 #logo {
-    
-    height: 40px;
-    width: 40px;
-    
-}
-/* box around logo */
-.icon {
-    display: flex;
-    align-items: center;    
-
-}
-/* controls navigation box */
-div>nav {
-    /* display: flex; */
-    /* margin: 10px;  */
-    /* font-size: 1.5em;
-    font-weight: 300; */
-    /* align-items: center;  */
-    /* justify-content: space-evenly; */
-    border: 2px solid red; 
-    
-}
-
-/* control '<a>' tag only */
-nav>a {
-    
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* border: 2px solid rgba(37, 205, 85, 0.639); */
-}
-
-/* control boxes around 'name' and 'nav' inside header */
-/* header>div {
-    display: flex;
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: bold;
+}
+
+#home-main {
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    /* border: 2px solid white; */
+    margin: 0px 2em 0px 2em;
     align-items: center;
-    border: 2px dotted orange;
-
-} */
-
-h2, p {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-main {
-    box-sizing: border-box;
-    height: 500px;
-    /* width: 100vw; */ 
-    display: flex;
-    padding: 50px 200px 50px 200px;
-    border: 2px solid rgb(133, 89, 89);
     
-   
+    
+}
+#main-hs-img {
+    height: 20em;
+    width: 20em;
+    border-radius: 10em;
+    /* border: 2px solid white; */
+    margin: 0em 3em 0em 3em;
 }
 
-/* aside {
-    display: flex;
-    border-radius: 2px solid rgb(255, 255, 255);
-    height: 0;
-    width: 30px;
-    background-color: #ffffff;
-} */
+.button-div {
+    margin: 4em;
+    
+    
 
-/* div>p,h1 {
+}
+.button {
+    padding: 1em 6em 1em 6em; /* button-size */
+    border: 2px solid black;
+    border-radius: 15px;
     font-size: 1em;
-    
-    line-height: 1em;
-    display: flex;
-    justify-content: center;
-    
-} */
+    font-weight: bolder;
+}
+
+.button>a {
+    text-decoration: none;
+}
 
 .intro {
     box-sizing: border-box;
-    border: 2px solid white; 
-    padding: 0px 150px 0px 150px;
-    height: 100%;
-  text-align: center; 
-    
-
-
-    /* width: ;     */
-}
-#intro-head {
-    font-size: 2em;
+    /* border: 0.5px solid white; */
+    text-align: center;
+    font-size: 1em;
     line-height: 2em;
-    
-}
-#intro-sub-header {
-    font-size: 1.25em;
-    line-height: 2em; 
-
+    align-items:center;
+    margin: 0em 6em 0em 6em;
+    padding: 1em; 
 }
 #intro-body {
-    font-size: 1em;
-    line-height:1.5em ;
+    display: flex;
+    text-align: center;
+    margin: 0em 3em 0em 3em;   
 }
-#intro-body  {
-color: aqua;
-text-align: center;
+#intro-head, #intro-sub-head {
+
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 0.5em;
+}
+
+#nav-a {
+    margin: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e5e9ef;   
+}
+/* navigation hover effect (taken referenced from 3W school) */
+a#nav-a:hover, a#nav-a:active {
+    text-decoration: underline;
+    color: blanchedalmond;
+}
+
+/* ABOUT PAGE STYLE BEGIN */
+
+/* #main-2 {
+    border: 1px solid white ;
+    height: ;
+    width: 100vw;
+    margin: 1em;
+    display: inline-block 
+} */
+
+#about-par {
+    align-content: space-between;
 
 }
-.button-div {
-    margin-top: 30px;
+#about-header {
+    border-bottom: 1px solid white;
 }
-.button-div button {
-    padding: 20px;
-    background-color: #B06161;
 
-    border: 1px solid white; 
-    border-radius: 10px; 
+#about-main {
+    display: flex;
+    font-size: 1.25em;
+    text-align: center;
+    line-height: 1em;
 }
-.main-hs {
-    border: 2px solid white;
-    margin-right: 10px;
-    height: 100%;
-   
-   
-}
-#main-hs-img {
-    height: 100%;
-    width: 20rem;
-    object-fit: cover;
+
+/* CONTACT PAGE BEGIN  */
+
+#contact-form {
+    border: 1px solid white;
+    outline: 2px solid red;
+    text-align: center;
+    /* display: block; */
 }
